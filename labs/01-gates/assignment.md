@@ -46,11 +46,20 @@ end architecture dataflow;
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### Distributive laws
+1. First distributive law:
 
-1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+   ![First law](images/distributive1.png)
+   
+   Second distributive law:
+   
+   ![Second law](images/distributive2.png)
+   
+   Screenshot with simulated time waveforms:
 
    ![Distributive laws waveforms](images/distr_laws.png)
+   
+   It is clearly visible that both sides of each distributive law have equal response and are therefore equivalent. 
 
-2. Link to your public EDA Playground example:
+2. Link to the public EDA Playground example:
 
    [https://www.edaplayground.com/x/Szmn](https://www.edaplayground.com/x/Szmn)
