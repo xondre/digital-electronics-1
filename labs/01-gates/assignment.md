@@ -6,19 +6,19 @@
 
    ![Logic function](images/equations.png)
    
+   f(c,b,a) built using only NAND gates:
+   
+   ![NAND circuit](images/NAND.png)
+   
    f(c,b,a) built using only NOR gates:
    
    ![NOR circuit](images/NOR.png)
    
-   f(c,b,a) built using only NAND gates:
-   
-   ![NAND circuit](images/NAND.png)
-
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions:
 
 ```vhdl
 architecture dataflow of gates is
-   signal s_neg : std_logic; -- Creating an intermediate variable
+   signal s_neg : std_logic; -- Creating an intermediate signal
 begin
     -- Original function(O.f.)
     f_org_o  <= (not(b_i) and a_i) or (not(c_i) and not(b_i)); 
