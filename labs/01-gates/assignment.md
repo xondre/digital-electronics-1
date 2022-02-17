@@ -49,7 +49,7 @@ end architecture dataflow;
 
 1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![Distributive laws waveforms](images/distributive laws waveforms.png)
+   ![Distributive laws waveforms](images/distr_laws.png)
 
 2. Link to your public EDA Playground example:
 
