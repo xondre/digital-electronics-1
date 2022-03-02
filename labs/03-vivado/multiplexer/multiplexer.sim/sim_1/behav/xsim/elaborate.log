@@ -1,0 +1,7 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto cd3372b7a5da491f8683e3acd76b33a1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_mux_3bit_4to1_behav xil_defaultlib.tb_mux_3bit_4to1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [D:/Documents/xondre13/digital-electronics-1/labs/03-vivado/multiplexer/multiplexer.srcs/sources_1/new/mux_3bit_4to1.vhd:46]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_mux_3bit_4to1 in library work failed.
