@@ -2,7 +2,7 @@
 
 ### Seven-segment display decoder
 
-1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+1. Listing of VHDL stimulus process from testbench file:
 
 ```vhdl
     p_stimulus : process
@@ -80,7 +80,7 @@
     end process p_stimulus;
 ```
 
-2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+2. Screenshot with simulated time waveforms:
 
    ![waveforms](images/waveforms.png)
 
