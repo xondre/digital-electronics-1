@@ -82,7 +82,7 @@ begin
     begin
         report "Stimulus process started" severity note;
         s_data <='0'; wait for 17 ns;
-        s_data <='1'; wait for 50 ns;
+        s_data <='1'; wait for 90 ns;
         s_data <='0'; 
 
         -- DEFINE YOUR INPUT DATA HERE

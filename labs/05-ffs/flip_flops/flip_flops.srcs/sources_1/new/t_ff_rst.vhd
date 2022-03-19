@@ -51,11 +51,12 @@ begin
                 q   <= '0';
                 q_bar <= '1';
             else
-                q_n  <= (t and not(q_n)) or (not(t) and q_n);
-                q <= q_n;
+                q_bar <= not q_n;
+                q  <= q_n;
+                q_n <= (t and not(q_n)) or (not(t) and q_n);
+                
             end if;
         end if;
-        
     end process p_t_ff_rst;
     
 end architecture Behavioral;
