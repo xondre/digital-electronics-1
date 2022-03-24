@@ -36,7 +36,7 @@
 
 2. Screenshot with simulated time waveforms.
 
-   ![waveforms](images\waveforms.png)
+   ![waveforms](images/waveforms.png)
 
 ### Two counters
 
