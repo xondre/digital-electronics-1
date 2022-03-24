@@ -27,6 +27,7 @@ architecture testbench of tb_cnt_up_down is
     -- Number of bits for testbench counter
     constant c_CNT_WIDTH         : natural := 5;
     constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
+    constant c_MAX               : natural := 3;
 
     --Local signals
     signal s_clk_100MHz : std_logic;
@@ -83,7 +84,7 @@ begin
     begin
         s_reset <= '0'; wait for 12 ns;
         -- Reset activated
-        s_reset <= '1'; wait for 73 ns;
+        s_reset <= '1'; wait for 33 ns;
         -- Reset deactivated
         s_reset <= '0';
         wait;
@@ -97,16 +98,16 @@ begin
         report "Stimulus process started" severity note;
 
         -- Enable counting
-        s_en     <= '1';
+        --s_en     <= '1';
         
         -- Change counter direction
         s_cnt_up <= '1';
-        wait for 380 ns;
+        wait for 220 ns;
         s_cnt_up <= '0';
         wait for 220 ns;
 
         -- Disable counting
-        s_en     <= '0';
+        --s_en     <= '0';
 
         report "Stimulus process finished" severity note;
         wait;
