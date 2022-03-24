@@ -52,11 +52,11 @@ end top2;
 architecture Behavioral of top2 is
 
   -- Internal clock enable
+  signal s_en0  : std_logic;
   signal s_en1  : std_logic;
-  signal s_en2  : std_logic;
   -- Internal counter
-  signal s_cnt1 : std_logic_vector(4 - 1 downto 0);
-  signal s_cnt2 : std_logic_vector(16 - 1 downto 0);
+  signal s_cnt0 : std_logic_vector(4 - 1 downto 0);
+  signal s_cnt1 : std_logic_vector(16 - 1 downto 0);
 
 begin
 
@@ -69,7 +69,7 @@ begin
       port map(
           clk   => CLK100MHZ,
           reset => BTNC,
-          ce_o  => s_en1
+          ce_o  => s_en0
       );
       
    clk_en1 : entity work.clock_enable
@@ -79,7 +79,7 @@ begin
       port map(
           clk   => CLK100MHZ,
           reset => BTNC,
-          ce_o  => s_en2
+          ce_o  => s_en1
       );
 
   --------------------------------------------------------------------
@@ -92,8 +92,8 @@ begin
           clk => CLK100MHZ,
           reset => BTNC,
           cnt_up_i => SW(0),
-          en_i => s_en1,
-          cnt_o => s_cnt1
+          en_i => s_en0,
+          cnt_o => s_cnt0
       );
       
    bin_cnt1 : entity work.cnt_up_down
@@ -104,15 +104,15 @@ begin
           clk => CLK100MHZ,
           reset => BTNC,
           cnt_up_i => SW(1),
-          en_i => s_en2,
-          cnt_o => s_cnt2
+          en_i => s_en1,
+          cnt_o => s_cnt1
       );
 
   --------------------------------------------------------------------
   -- Instance (copy) of hex_7seg entity
   hex2seg : entity work.hex_7seg
       port map(
-          hex_i    => s_cnt1,
+          hex_i    => s_cnt0,
           seg_o(6) => CA,
           seg_o(5) => CB,
           seg_o(4) => CC,
@@ -127,6 +127,6 @@ begin
   
 
   -- Display counter values on LEDs
-  LED(15 downto 0) <= s_cnt2;
+  LED(15 downto 0) <= s_cnt1;
 
 end architecture Behavioral;
