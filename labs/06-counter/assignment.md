@@ -2,7 +2,7 @@
 
 ### Bidirectional counter
 
-1. Listing of VHDL code of the completed process `p_cnt_up_down`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+1. Listing of VHDL code of the completed process `p_cnt_up_down`:
 
 ```vhdl
     --------------------------------------------------------
