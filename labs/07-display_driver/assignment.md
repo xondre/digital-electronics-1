@@ -1,8 +1,8 @@
-# Lab 7: YOUR_FIRSTNAME LASTNAME
+# Lab 7: ADAM ONDREJKA
 
 ### Display driver
 
-1. Listing of VHDL code of the completed process `p_mux`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+1. Listing of VHDL code of the completed process `p_mux`:
 
 ```vhdl
     --------------------------------------------------------
@@ -45,12 +45,12 @@
     end process p_mux;
 ```
 
-2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+2. Screenshot with simulated time waveforms:
 
-   ![your figure]()
+   ![Simulated waveforms](images/simulated_waveforms.png)
 
 ### Eight-digit driver
 
 1. Image of the 8-digit driver's block schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components, and internal signals!
 
-   ![your figure]()
+   ![8-digit driver](images/diagram_driver_8digits.png)
